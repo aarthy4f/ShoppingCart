@@ -1,0 +1,19 @@
+[
+	{
+"tc":"checkout small size",  
+"size":"small",
+"sizeverify":"S",
+"quanity":"1",
+"checkoutamount":"10.90",
+"addquanity":"1"
+},
+{"tc":"checkout medium size",  
+"size":"medium",
+"sizeverify":"M",
+"quanity":"1",
+"checkoutamount":"29.45",
+"addquanity":"2"
+
+}
+
+]
