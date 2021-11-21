@@ -1,19 +1,19 @@
 [
 	{
-"tc":"checkout small size",  
+"tc":"checkout small size tshirt",  
 "size":"small",
 "sizeverify":"S",
 "quanity":"1",
-"checkoutamount":"10.90",
+"checkoutamount":"11.90",
 "addquanity":"1"
 },
-{"tc":"checkout medium size",  
+{
+"tc":"checkout medium size tshirt",  
 "size":"medium",
 "sizeverify":"M",
 "quanity":"1",
 "checkoutamount":"29.45",
-"addquanity":"2"
-
+"addquanity":"1"
 }
 
 ]

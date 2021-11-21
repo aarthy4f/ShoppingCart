@@ -21,6 +21,17 @@ sel.clickMedium().click().wait(6000);
 	//sel.clickSmall().click().wait(6000);
 
 }
+async function uncheckselection(size){
+	switch(size){
+case "small":
+	sel.clickSmall().click().wait(6000);
+	break;
+case "medium":
+sel.clickMedium().click().wait(6000);
+	break;
+
+	}
+}
 async function validateselection(size,quantity){
 	 var vquantity="Quantity: "+quantity;
 sel.getQuantity().invoke('text')
@@ -28,6 +39,18 @@ sel.getQuantity().invoke('text')
       expect(text1).to.contains(size)
       expect(text1).to.contains(vquantity)
   })
+   cy.get('.float-cart__shelf-container')
+        .should('have.length', 1)
+}
+async function validatesecondselection(size,quantity){
+	 var vquantity="Quantity: "+quantity;
+sel.getsecondQuantity().invoke('text')
+  .then((text1) => {
+      expect(text1).to.contains(size)
+      expect(text1).to.contains(vquantity)
+  })
+   cy.get('.shelf-item__details')
+        .should('have.length', 2)
 }
 
 async function completecheckout(amount){
@@ -37,4 +60,4 @@ async function completecheckout(amount){
   expect(str).to.equal(checkoutAmount)
 	});
 }
-module.exports={selectSize,validateselection,completecheckout};
+module.exports={selectSize,validateselection,completecheckout,uncheckselection,validatesecondselection};

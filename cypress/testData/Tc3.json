@@ -1,0 +1,21 @@
+[
+	{
+"tc":"Selecting the lowest price tshirt",  
+"size":"small",
+"sizeverify":"S",
+"quanity":"1",
+"checkoutamount":"10.90",
+"addquanity":"1",
+"sortlist":"small"
+},
+	{
+"tc":"Selecting the highest price tshirt",  
+"size":"small",
+"sizeverify":"S",
+"quanity":"1",
+"checkoutamount":"22.50",
+"addquanity":"1",
+"sortlist":"large"
+}
+
+]

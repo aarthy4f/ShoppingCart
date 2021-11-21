@@ -1,0 +1,14 @@
+[
+	{
+"tc":"Verify the Add and remove product functionality",  
+"firstitemsize":"small",
+"sizeverify":"S",
+"quanity":"2",
+"checkoutamount":"10.90",
+"addquanity":"3",
+"seconditemsize":"medium",
+"secondsizeverify":"M",
+"removequanity":"1"
+}
+
+]

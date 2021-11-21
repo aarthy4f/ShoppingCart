@@ -12,6 +12,10 @@ class  productSelectionPage{
 	getQuantity(){
 		return cy.xpath("//p[@class='desc']");
 	}
+	
+	getsecondQuantity(){
+		return cy.xpath("//div[@class='shelf-item__details'][1]//following::p");
+	}
 	clickbuy(){
 		return  cy.xpath("//div[@class='buy-btn']");
 	}

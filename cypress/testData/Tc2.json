@@ -1,0 +1,13 @@
+[
+	{
+"tc":"Add small and medium size product",  
+"firstitemsize":"small",
+"sizeverify":"S",
+"quanity":"1",
+"checkoutamount":"40.35",
+"addquanity":"1",
+"seconditemsize":"medium",
+"secondsizeverify":"M"
+}
+
+]
