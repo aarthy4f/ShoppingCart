@@ -7,18 +7,9 @@ const data=require('../../testData/TC1.json');
 let i=0;
 
 require('cypress-xpath')
-// Welcome to Cypress!
-//
-// This spec file contains a variety of sample tests
-// for a todo list app that are designed to demonstrate
-// the power of writing tests in Cypress.
-//
-// To learn more about how Cypress works and
-// what makes it such an awesome testing tool,
-// please read our getting started guide:
-// https://on.cypress.io/introduction-to-cypress
 
-describe('Testcase for checkout', function ()  {
+
+describe('Testcase to add  specific item based on user size input', function ()  {
     beforeEach(() => {
     // Cypress starts out with a blank slate for each test
     // so we must tell it to visit our website with the `cy.visit()` command.
@@ -38,16 +29,12 @@ describe('Testcase for checkout', function ()  {
 function execute(data) {
     var checkoutvalue=data.checkoutamount
   addcontext(this, 'context');
-    addTestContext('selecting the size','S');
+   
     prodSelection.selectSize(data.size);
-     addTestContext('verifying the size','s');
+     
              
         prodSelection.validateselection(data.sizeverify,data.quanity)
 
-         if(data.addquanity>1){
-             cy.xpath('//button[contains(text(),"+")]').first().should("be.visible").click({force:true})
-             checkoutvalue=(checkoutvalue*data.addquanity).toFixed(2)
-         }
         prodSelection.completecheckout(checkoutvalue);
 
 

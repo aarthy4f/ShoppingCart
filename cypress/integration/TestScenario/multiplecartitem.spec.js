@@ -6,7 +6,7 @@ let i=0;
 
 require('cypress-xpath')
 
-describe('Testcase for checkout', function ()  {
+describe('Testcase for selecting multiple items in different size', function ()  {
     beforeEach(() => {
     // Cypress starts out with a blank slate for each test
     // so we must tell it to visit our website with the `cy.visit()` command.

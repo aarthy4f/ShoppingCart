@@ -1,13 +1,15 @@
 const cypress = require('cypress');
 //var _=require('loadash');
 var myArgs = process.argv
-//param=require('./params');
+param=require('./params');
 function main(){
+	var flowname=param.getsuite()
+	console.log(param.getsuite());
 	try{
-	console.log("myagr"+ myArgs[2]);
-	//additem.spec
+	
 var specfile;
-	switch(myArgs[2]){
+
+	switch(flowname){
 case "additem":
 	specfile='cypress/integration/TestScenario/additem.spec.js'
 	console.log(specfile);
@@ -31,6 +33,21 @@ case "additembycolor":
 
 	}
 	cypress.run({
+		config:{
+
+		"reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/report",
+            "quite": true,
+            "overwrite": false,
+           "charts": true,
+           "embeddedScreenshots":true,
+            "json": true
+        }
+	}
+    },
 		spec:specfile,
 	}).then((result)=>{
 		console.log("done");
