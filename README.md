@@ -6,7 +6,7 @@ Sample automation for the shopping cart website
  Run npm test to run test headlessly or npmx cypress open to open the Cypress Visual Test Runnier on the root directory of this project.
 
 
-**** TestCases******
+**TestCases**
 
 1. Add the item based on the size S,M,L.
 2. Add multiple quanity and remove the quantity.
@@ -17,5 +17,14 @@ Sample automation for the shopping cart website
 **Report**
 
 Moachawesome report is included to generate the report for execution.
+
+Folder Structure
+Cypress/integration-: This consist of the spec file for each testcase
+cypress/pagefactory-: All the resuable function are created under this
+cypress/pageobject-: The xpath are captured and placed
+cpress/testdata-: The testdata which is passed to the spec file, the data was passed in json format
+
+
+
 
  
