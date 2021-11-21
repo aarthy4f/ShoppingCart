@@ -19,9 +19,13 @@ Sample automation for the shopping cart website
 Moachawesome report is included to generate the report for execution.
 
 Folder Structure
+
 Cypress/integration-: This consist of the spec file for each testcase
+
 cypress/pagefactory-: All the resuable function are created under this
+
 cypress/pageobject-: The xpath are captured and placed
+
 cpress/testdata-: The testdata which is passed to the spec file, the data was passed in json format
 
 
