@@ -3,7 +3,13 @@ Sample automation for the shopping cart website
 
 **Running test:**
  Install dependencies by running npm i
- Run npm test to run test headlessly or npmx cypress open to open the Cypress Visual Test Runnier on the root directory of this project.
+ Execute the below command
+ npm run test-> to run test headlessly 
+ npmx cypress open to open the Cypress Visual Test Runnier on the root directory of this project.
+ 
+ To run single testcase kindly use the below command
+ export spec='additem' //Other option addandremove,multiplecartitem,sortorderby,additembycolor
+ npm run singletestcase 
 
 
 **TestCases**
